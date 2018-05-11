@@ -41,7 +41,7 @@ def toPlainText(latText):
    for word in lWords:
       lat = word.replace(word[-2:len(word)], "") # remove the 'ay' from word
       first = lat[-1] # collect the first letter of the plain word from end of lat
-      rest = lat.replace(lat[-1], "") # isolate the rest of the word
+      rest = lat[0:len(lat) - 1]  # get the rest of the word
       plainWord = "{}{}".format(first, rest) # put the plain word together
       plainWords.insert(len(plainWords), plainWord) # add the plain word to end of array
    return " ".join(plainWords) # return the plain words joined by spaces
@@ -74,6 +74,7 @@ def decrypt(dText):
    pText = toPlainText(latText) # convert the Pig Latin to plain text
    return pText # return the plain text
 
+# I love you, mom!
 
 # Program flow
 def main():
