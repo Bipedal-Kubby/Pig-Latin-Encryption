@@ -8,6 +8,7 @@ The options are as follows:
   3. Convert to plain text
   4. Decrypt
   5. Exit
+
 To these, the user can respond with the number or 'latin', 'encrypt', 'plain', 'decrypt', or 'exit', respectively.
 
 Within the encrypt function, the user is prompted for a key.
